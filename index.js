@@ -10,9 +10,7 @@ const { createStore, combineReducers, applyMiddleware } = require('redux')
 const { default: logger } = require('redux-logger')
 const thunk = require('redux-thunk').default
 
-
 //constants
-
 //constants for product
 const GET_PRODUCTS = 'GET_PRODUCTS'
 const ADD_PRODUCT = 'ADD_PRODUCT'

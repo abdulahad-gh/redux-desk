@@ -1,0 +1,7 @@
+//1. declare or create constant: increment, decrement, reset
+//2. init state: {count-0}
+//3. create actions: increment, decrement, reset
+//4. create reducer: reducer function update or modify our state value and return. it's work    based on action type.
+//5. create store.
+//6. provide store for every children from root file or fast parent file.
+7. dispatch action.
