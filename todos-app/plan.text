@@ -1,0 +1,8 @@
+1.install package
+2.declare constants
+3.create asyncronus actions
+4.create todos reducer
+5.create store
+6.provide store from the root file / index.js
+7.use state from store object
+https://jsonplaceholder.typicode.com/todos
