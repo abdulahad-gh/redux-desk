@@ -1,6 +1,6 @@
-1.install package
-2.declare constants
-3.create asyncronus actions
+1.install package/
+2.declare constants/
+3.create asyncronus actions/
 4.create todos reducer
 5.create store
 6.provide store from the root file / index.js
