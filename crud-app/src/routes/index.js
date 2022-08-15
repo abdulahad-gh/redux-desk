@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import AddProduct from '../fetaures/products/AddProduct';
+import EditProduct from '../fetaures/products/EditProduct';
 import ProductView from '../fetaures/products/ProductView';
 import Error from '../pages/Error';
 import Home from '../pages/Home';
@@ -16,6 +17,7 @@ const Index = () => {
                     <Route path='/' element={<Home />} />
                     <Route path='/show-products' element={<ProductView />} />
                     <Route path='/add-product' element={<AddProduct />} />
+                    <Route path='/edit-product' element={<EditProduct />} />
                     <Route path='*' element={<Error />} />
 
                 </Routes>

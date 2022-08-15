@@ -77,3 +77,31 @@ button:hover {
   gap: 4px;
   margin-top: 4px;
 }
+
+.all-products {
+  position: relative;
+}
+
+
+#delete-popup {
+  width: 200px;
+  height: 100px;
+  background-color: rgb(211, 205, 205);
+  color: rgb(235, 40, 115);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  position: absolute;
+  left: 7rem;
+  top: 7rem
+}
+
+.btn-yes {
+  color: red;
+}
+
+.btn-yes:hover {
+  background-color: red;
+  color: white;
+}

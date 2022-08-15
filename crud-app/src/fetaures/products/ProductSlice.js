@@ -14,6 +14,15 @@ export const productSlice = createSlice({
         addProduct: (state, actions) => {
             state.products.push(actions.payload)
         },
+        editProduct: (state, actions) => {
+            const { id, name, price } = actions.payload
+            const isBookExists = state.products.filter(pd => pd.id === id)
+            if (isBookExists) {
+                isBookExists[0].name = name;
+                isBookExists[0].price = price
+            }
+
+        },
         deleteProduct: (state, actions) => {
             state.products = state.products.filter(pd => pd.id != actions.payload)
         }
@@ -21,7 +30,7 @@ export const productSlice = createSlice({
     }
 })
 
-export const { showProduct, addProduct, deleteProduct } = productSlice.actions
+export const { showProduct, addProduct, editProduct, deleteProduct } = productSlice.actions
 
 
 export default productSlice.reducer
