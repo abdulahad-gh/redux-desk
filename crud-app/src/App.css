@@ -22,3 +22,24 @@ nav {
 .nav-link {
   color: white;
 }
+
+main {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 3rem;
+}
+
+th,
+td {
+  border: 1px solid;
+  padding: 1rem;
+}

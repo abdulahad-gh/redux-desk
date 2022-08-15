@@ -6,7 +6,7 @@ import Error from '../pages/Error';
 import Home from '../pages/Home';
 import Navbar from '../pages/Shared/Navbar';
 
-const index = () => {
+const Index = () => {
     return (
         <BrowserRouter>
             <Navbar />
@@ -26,4 +26,4 @@ const index = () => {
     );
 };
 
-export default index;
+export default Index;
