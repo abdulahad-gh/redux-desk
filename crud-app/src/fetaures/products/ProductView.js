@@ -1,10 +1,16 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { deleteProduct } from './ProductSlice';
 
 const ProductView = () => {
     const products = useSelector(state => state.productsReducer.products)
 
+    const dispatch = useDispatch()
 
+    const handleDeleteProduct = id => {
+        dispatch(deleteProduct(id))
+
+    }
 
     return (
         <div>
@@ -31,7 +37,7 @@ const ProductView = () => {
                                 <td>{price}</td>
                                 <td>
                                     <button>Edit</button>
-                                    <button>Delete</button>
+                                    <button onClick={() => handleDeleteProduct(id)}>Delete</button>
                                 </td>
                             </tr>
                         })
