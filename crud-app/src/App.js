@@ -1,5 +1,6 @@
+import Index from "./routes";
 
-import Index from './routes/index';
+
 
 function App() {
   return <Index />

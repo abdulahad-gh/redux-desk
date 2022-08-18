@@ -1,10 +1,11 @@
-import { configureStore } from "@reduxjs/toolkit";
-import productReducer from '../fetaures/products/ProductSlice'
+import { configureStore } from '@reduxjs/toolkit'
+import ProductReducer from '../feature/product/ProductSlice'
+
 const store = configureStore({
     reducer: {
-        productsReducer: productReducer
+        productReducer: ProductReducer
     }
-
 })
 
 export default store;
+

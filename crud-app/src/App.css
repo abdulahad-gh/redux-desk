@@ -30,21 +30,27 @@ main {
   justify-content: center;
 }
 
+h1,
 h2 {
   text-align: center;
 }
 
 table {
   border-collapse: collapse;
-  margin: 3rem;
   background: rgba(65, 51, 51, 0.611);
   color: white;
+  width: 50%;
+  margin: 20px auto;
 }
 
 th,
 td {
   border: 1px solid;
   padding: 1rem;
+}
+
+td:last-child {
+  text-align: center;
 }
 
 button {
@@ -54,6 +60,7 @@ button {
   border-radius: 5px;
   margin-left: 4px;
   cursor: pointer;
+
 }
 
 button:hover {
@@ -61,22 +68,39 @@ button:hover {
   color: rgb(229, 188, 188);
 }
 
-.form-btn {
-  width: 100px;
-  margin-left: 104px;
 
+#form-section {
+  width: 20%;
+  margin: auto;
 }
 
-.add-form {
-  margin-top: 40px;
+form {
+  margin-top: 50px;
 }
 
 .input-field {
-  display: flex;
-  justify-content: space-between;
-  gap: 4px;
-  margin-top: 4px;
+  display: grid;
 }
+
+.input-field:last-child {
+  width: 100px;
+}
+
+.form-btn {
+  width: 50%;
+  margin: auto;
+  display: block;
+  margin-top: 5px;
+  padding: 5px 0;
+
+}
+
+.error-msg {
+  color: red;
+}
+
+
+
 
 .all-products {
   position: relative;
